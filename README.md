@@ -87,3 +87,62 @@ https://github.com/x01000101x/Merkle-test.git
 4. Cek result.
 
 ## Testing Admin
+
+#Admin Page
+
+-   Register
+
+1. Ketik `http://localhost/api/admin/register` dengan metode `POST`.
+2. Pada Headers masukkan 2 key yaitu :
+    ```
+    KEY              VALUE
+    Accept           application/json
+    Content-Type     application/json
+    ```
+3. Pada body masukkan value sesuka anda, tetapi jangan ubah keynya `(note : password required min 8)`, contoh :
+    ```
+    {
+    "name": "Mr. Z",
+    "email": "admin@test.com",
+    "password": "12345678",
+    }
+    ```
+4. Tekan tombol Send.
+5. Cek database pada tabel `users`.
+
+-   Login
+
+1. Ketik `http://localhost/api/admin/login` dengan metode `POST`.
+2. Pada Headers masukkan 2 key yaitu :
+    ```
+    KEY              VALUE
+    Accept           application/json
+    Content-Type     application/json
+    ```
+3. Pada body masukkan email dan password akun yg sudah dibuat, contoh :
+    ```
+    {
+    "email": "admin@test.com",
+    "password": "12345678",
+    }
+    ```
+4. Tekan tombol Send.
+5. Lihat result.
+
+-   Show Notes
+
+1. Ketik `http://localhost/api/admin/guest` dengan metode `GET`.
+2. Pada Params masukkan 2 key (untuk value bisa diubah sesuai keinginan, apabila ingin ke next page, ubah value `page`), contoh:
+    ```
+    KEY              VALUE
+    per-page         1
+    page             1
+    ```
+3. Tekan tombol Send.
+4. Cek result.
+
+-   Show Notes By Id
+
+1. Ketik `http://localhost/api/admin/guest/{id}` (ubah {id} dengan id yang diinginkan, contoh : 1) dengan metode `GET`.
+2. Tekan tombol Send.
+3. Cek result.
