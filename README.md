@@ -1,3 +1,10 @@
+## Message from me 📫
+
+First of all, Thank you so much for giving me this opportunity,
+if the app has an error, problem, or missing something,
+please contact me via [WhatsApp - 085280044559](wa.me/6285280044559) or email(leonarddamanik7@gmail.com)
+Thank you.
+
 ## Needed apps
 
 1. Code Editor
@@ -14,7 +21,7 @@
 4. Security (middleware, input validation)
 5. Eloquent
 
-## Starting the app
+## Installations
 
 1. Clone repo:
 
@@ -77,14 +84,15 @@ https://github.com/x01000101x/Merkle-test.git
 #NOTE GALLERY
 
 1. Ketikkan url `http://localhost/api/guest` dengan metode `GET`
-2. Pada Params masukkan 2 key (untuk value bisa diubah sesuai keinginan, apabila ingin ke next page, ubah value `page`), contoh:
+2. (Optional) Apabila ingin gunakan pagination, Pada Params masukkan 2 key (untuk value bisa
+   diubah sesuai keinginan, apabila ingin ke next page, ubah value `page`), contoh:
     ```
     KEY              VALUE
     per-page         1
     page             1
     ```
 3. Tekan tombol Send.
-4. Cek result.
+4. Cek response.
 
 ## Testing Admin
 
@@ -127,27 +135,28 @@ https://github.com/x01000101x/Merkle-test.git
     }
     ```
 4. Tekan tombol Send.
-5. Lihat result dan simpan tokennya untuk action admin yang lain.
+5. Lihat response dan simpan tokennya untuk action admin yang lain.
 
 -   Show Guests
 
 1. Ketik `http://localhost/api/admin/guest` dengan metode `GET`.
 2. Masukkan Token pada Authorization dengan tipe Bearer Token.
-3. Pada Params masukkan 2 key (untuk value bisa diubah sesuai keinginan, apabila ingin ke next page, ubah value `page`), contoh:
+3. (Optional) Apabila ingin gunakan pagination, Pada Params masukkan 2 key (untuk value bisa
+   diubah sesuai keinginan, apabila ingin ke next page, ubah value `page`), contoh:
     ```
     KEY              VALUE
     per-page         1
     page             1
     ```
 4. Tekan tombol Send.
-5. Cek result.
+5. Cek response.
 
 -   Show Guest By Id
 
 1. Ketik `http://localhost/api/admin/guest/{id}` (ubah {id} dengan id yang diinginkan, contoh : 1) dengan metode `GET`.
 2. Masukkan Token pada Authorization dengan tipe Bearer Token.
 3. Tekan tombol Send.
-4. Cek result.
+4. Cek response.
 
 -   Update Guest
 
