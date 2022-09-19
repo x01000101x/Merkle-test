@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\AdminResource;
+use App\Http\Resources\GuestResource;
 use App\Models\Guest;
 use Illuminate\Http\Request;
 
@@ -37,8 +39,15 @@ class GuestController extends Controller
 
     public function show()
     {
-        return [
-            Guest::select('name', 'note')->get()
-        ];
+        $perPage = request()->get('per-page');
+        $guest = Guest::paginate($perPage);
+        $GuestCollection = GuestResource::collection($guest);
+
+        $GuestData['data'] = $GuestCollection;
+        $GuestData['next_page_url'] = $guest->nextPageUrl();
+
+        return response()->json([
+            'data' => $GuestData
+        ], 200);
     }
 }
