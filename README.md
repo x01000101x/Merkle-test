@@ -11,6 +11,8 @@
 1. Token
 2. Pagination
 3. Collection/Resource
+4. Security (middleware, input validation)
+5. Eloquent
 
 ## Starting the app
 
