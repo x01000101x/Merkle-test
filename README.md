@@ -64,7 +64,7 @@ https://github.com/x01000101x/Merkle-test.git
 
 #GUEST FORM
 
-1. Ketikkan url `http://localhost/api/guest` dengan metode `POST`
+1. Ketikkan url `http://localhost:8000/api/guest` dengan metode `POST`
 2. Pada Headers masukkan 2 key yaitu :
     ```
     KEY              VALUE
@@ -85,7 +85,7 @@ https://github.com/x01000101x/Merkle-test.git
 
 #NOTE GALLERY
 
-1. Ketikkan url `http://localhost/api/guest` dengan metode `GET`
+1. Ketikkan url `http://localhost:8000/api/guest` dengan metode `GET`
 2. (Optional) Apabila ingin gunakan pagination, Pada Params masukkan 2 key (untuk value bisa
    diubah sesuai keinginan, apabila ingin ke next page, ubah value `page`), contoh:
     ```
@@ -102,7 +102,7 @@ https://github.com/x01000101x/Merkle-test.git
 
 -   Register
 
-1. Ketik `http://localhost/api/admin/register` dengan metode `POST`.
+1. Ketik `http://localhost:8000/api/admin/register` dengan metode `POST`.
 2. Pada Headers masukkan 2 key yaitu :
     ```
     KEY              VALUE
@@ -122,7 +122,7 @@ https://github.com/x01000101x/Merkle-test.git
 
 -   Login
 
-1. Ketik `http://localhost/api/admin/login` dengan metode `POST`.
+1. Ketik `http://localhost:8000/api/admin/login` dengan metode `POST`.
 2. Pada Headers masukkan 2 key yaitu :
     ```
     KEY              VALUE
@@ -141,7 +141,7 @@ https://github.com/x01000101x/Merkle-test.git
 
 -   Show Guests
 
-1. Ketik `http://localhost/api/admin/guest` dengan metode `GET`.
+1. Ketik `http://localhost:8000/api/admin/guest` dengan metode `GET`.
 2. Masukkan Token pada Authorization dengan tipe Bearer Token.
 3. (Optional) Apabila ingin gunakan pagination, Pada Params masukkan 2 key (untuk value bisa
    diubah sesuai keinginan, apabila ingin ke next page, ubah value `page`), contoh:
@@ -155,14 +155,14 @@ https://github.com/x01000101x/Merkle-test.git
 
 -   Show Guest By Id
 
-1. Ketik `http://localhost/api/admin/guest/{id}` (ubah {id} dengan id yang diinginkan, contoh : 1) dengan metode `GET`.
+1. Ketik `http://localhost:8000/api/admin/guest/{id}` (ubah {id} dengan id yang diinginkan, contoh : 1) dengan metode `GET`.
 2. Masukkan Token pada Authorization dengan tipe Bearer Token.
 3. Tekan tombol Send.
 4. Cek response.
 
 -   Update Guest
 
-1. Ketik `http://localhost/api/admin/guest` dengan metode `PUT`.
+1. Ketik `http://localhost:8000/api/admin/guest` dengan metode `PUT`.
 2. Masukkan Token pada Authorization dengan tipe Bearer Token.
 3. Pada Headers masukkan 2 key yaitu :
     ```
@@ -184,13 +184,13 @@ https://github.com/x01000101x/Merkle-test.git
 
 -   Delete Guest
 
-1. Ketik `http://localhost/api/admin/guest/{id}` (ubah {id} dengan id yang diinginkan, contoh : 1) dengan metode `DELETE`.
+1. Ketik `http://localhost:8000/api/admin/guest/{id}` (ubah {id} dengan id yang diinginkan, contoh : 1) dengan metode `DELETE`.
 2. Masukkan Token pada Authorization dengan tipe Bearer Token.
 3. Tekan tombol Send.
 4. Lihat database `guests` atau get guest.
 
 -   Logout Admin
 
-1. Ketik `http://localhost/api/admin/logout` dengan metode `GET`.
+1. Ketik `http://localhost:8000/api/admin/logout` dengan metode `GET`.
 2. Masukkan Token pada Authorization dengan tipe Bearer Token.
 3. Tekan tombol Send.
