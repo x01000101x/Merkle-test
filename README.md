@@ -1,10 +1,18 @@
+## Needed apps
+
+1. Code Editor
+2. Postman
+3. Composer
+4. MySQL DB
+5. Web Browser
+
 ## Extra features
 
 1. Token
 2. Pagination
 3. Collection/Resource
 
-## Inisialisasi
+## Starting the app
 
 1. Clone repo:
 
@@ -27,8 +35,12 @@ https://github.com/x01000101x/Merkle-test.git
 
 8. Jalankan command `php artisan serve` untuk menjalankan app.
 
-## Test 1
+## Testing Test 1
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+1. Jalankan `php artisan serve`.
+
+2. Buka web browser dan ketik ke search bar : `http://localhost:8000/`
+
+3. Function untuk test 1 berada di path `app\Http\Controllers\WEB\FuncController.php`
 
 ## Test 2
