@@ -51,7 +51,7 @@ https://github.com/x01000101x/Merkle-test.git
 
 2. Buka POSTMAN.
 
-### Testing Guest
+## Testing Guest
 
     #GUEST FORM
     1. Ketikkan url `http://localhost/api/guest` dengan metode `POST`
@@ -84,4 +84,4 @@ https://github.com/x01000101x/Merkle-test.git
     4. Tekan tombol Send.
     5. Cek result.
 
-### Testing Admin
+## Testing Admin
