@@ -5,13 +5,15 @@ if the app has an error, problem, or missing something,
 please contact me via [WhatsApp - 085280044559](wa.me/6285280044559) or email(leonarddamanik7@gmail.com)
 Thank you.
 
-## Needed apps
+## Needed components
 
 1. Code Editor
 2. Postman
 3. Composer
 4. MySQL DB
 5. Web Browser
+6. Apache Server/XAMPP/LAMPP/MAMPP
+7. PHP 7.4
 
 ## Extra features
 
